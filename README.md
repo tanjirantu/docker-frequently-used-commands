@@ -1,5 +1,5 @@
 # docker-frequently-used-commands
-If you are using docker and dependent on `redis`, `mongodb`, and `rabbitmq` applications you can kickstart with these commands. 
+If you use Docker and rely on applications like `Redis`, `MongoDB`, and `RabbitMQ`, you can get started with these commands. I've included a `.yaml` file that you can use if your backend depends on all of these services. You can add more to this file if necessary.
 
 ## Run in detach mode
 ```
