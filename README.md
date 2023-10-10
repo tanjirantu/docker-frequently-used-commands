@@ -1,7 +1,5 @@
 # docker-frequently-used-commands
-Devs who are working on a backend that requires different applications installed locally can use this repo to kickstart their services with one single command. 
-
-#### redis, mongodb, rabbitmq 
+If you are using docker and dependent on `redis`, `mongodb`, and `rabbitmq` applications you can kickstart with these commands. 
 
 ## Run in detach mode
 ```
