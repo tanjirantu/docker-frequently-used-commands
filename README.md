@@ -12,8 +12,8 @@ docker-compose up -d
 docker run -d \
   --name mongodb \
   -p 27017:27017 \
-  -e MONGODB_INITDB_ROOT_USERNAME=devops \
-  -e MONGODB_INITDB_ROOT_PASSWORD=devops007 \
+  -e MONGODB_INITDB_ROOT_USERNAME=username \
+  -e MONGODB_INITDB_ROOT_PASSWORD=password \
   -e MONGODB_INITDB_DATABASE=admin \
   -v mongodb:/data/db \
   mongo:6-jammy
