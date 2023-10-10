@@ -1,9 +1,7 @@
 # docker-frequently-used-commands
 Devs who are working on a backend that requires different applications installed locally can use this repo to kickstart their services with one single command. 
 
-### redis 
-### mongodb
-### rabbitmq
+#### redis, mongodb, rabbitmq 
 
 ## Run in detach mode
 ```
@@ -31,7 +29,7 @@ docker run -d \
   bitnami/redis:7.0.13
 
 // Do not allow empty password
-# -e REDIS_PASSWORD=mysecretpassword \
+// -e REDIS_PASSWORD=mysecretpassword \
   
 
 ```
