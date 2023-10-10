@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:6-jammy
+    container_name: mongodb
+    ports:
+      - '27017:27017'
+    environment:
+      MONGODB_INITDB_ROOT_USERNAME: devops
+      MONGODB_INITDB_ROOT_PASSWORD: devops007
+      MONGODB_INITDB_DATABASE: admin
+    volumes:
+      - mongodb:/data/db
+
+  rabbitmq:
+    image: rabbitmq:3.9.29-management-alpine
+    container_name: rabbitmq
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  redis:
+    image: bitnami/redis:7.0.13
+    container_name: redis
+    ports:
+      - '6379:6379'
+    environment:
+      ALLOW_EMPTY_PASSWORD: 'yes'
+
+volumes:
+  mongodb:
