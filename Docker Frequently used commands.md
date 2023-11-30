@@ -21,15 +21,7 @@ docker run -d \\
 ```
 
 ```
-docker run -d \\
-  --name redis \\
-  -p 6379:6379 \\
-  -e ALLOW_EMPTY_PASSWORD=yes \\
-  bitnami/redis:7.0.13
-
-// Do not allow empty password
-// -e REDIS_PASSWORD=mysecretpassword \\
-
+docker run -d --name redi -p 6379:6379 -e REDIS_PASSWORD=password bitnami/redis:7.0.13
 ```
 
 ```
