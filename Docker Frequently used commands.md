@@ -21,7 +21,7 @@ docker run -d \\
 ```
 
 ```
-docker run -d --name redi -p 6379:6379 -e REDIS_PASSWORD=password bitnami/redis:7.0.13
+docker run -d --name redis -p 6379:6379 -e REDIS_PASSWORD=password bitnami/redis:7.0.13
 ```
 
 ```
