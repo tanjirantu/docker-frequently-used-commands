@@ -34,3 +34,8 @@ docker run -d \\
   rabbitmq:3.9.29-management-alpine
 
 ```
+
+```
+docker run --rm -it --name stripe-cli stripe/stripe-cli listen \
+    --api-key sk_test_51J6nFYHgGxrAF2GI68UuETzDy2BWkDU8FWiTV20PhACPjTL7lxLbn0gXuo8kLsFaHhbQdebmKkkfzx9rz9OWhK8D00z4mokbJL
+```
